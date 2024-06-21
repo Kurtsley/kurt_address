@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurtsley's Address Lookup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="interactive.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="banner">Kurtsley's Address Lookup</header>
+      <main class="main-content">
+        <form id="address-form">
+          <label for="address">Enter Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="123 Main St, Anytown, USA"
+          />
+          <button id="search-btn" type="submit">Search</button>
+        </form>
+      </main>
+      <div class="result-content">
+        <span id="exist-text"></span>
+        <span id="address-result"></span>
+        <span id="coord-result"></span>
+        <a id="map-link" target="_blank">Navigate</a>
+      </div>
+  </body>
+</html>
